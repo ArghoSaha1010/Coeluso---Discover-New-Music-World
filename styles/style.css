@@ -246,6 +246,72 @@
     line-height: 1.8;
     text-align: justify;
 }
+
+
+
+/* Phone Feature Section */
+.phone-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative; /* for absolute/relative positioning of children if needed */
+    flex-wrap: wrap; /* wrap on smaller screens */
+    margin: 0px;
+}
+
+/* Div 1 & Div 2 - feature blocks */
+.phone-feature > div {
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    align-items: start;
+    gap: 40px; /* more space between feature items */
+    position: relative; /* allow custom adjustments */
+}
+
+/* Individual feature item */
+.phone-feature > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    max-width: 270px; /* user-friendly width */
+    gap: 5px;
+}
+
+.phone-feature > div > div img {
+    width: 35px;
+}
+
+.phone-feature > div > div h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.phone-feature > div > div p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #66778e;
+    text-align: justify;
+}
+
+/* Phone Image in the middle */
+.phone-feature > img {
+    width: 50%; /* 85% of viewport width */
+    max-width: 650px; /* optional max size */
+    height: auto;
+    position: relative; /* allows moving it with top/left/right/bottom */
+    z-index: 1; /* so it stays behind or in front as needed */
+    top: -150px;
+}
+.phone-feature-h1-size
+{
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
 @media (max-width: 600px) {
     /* Navbar adjustments */
     .menu-list {
