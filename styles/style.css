@@ -42,7 +42,7 @@
     width: 90%;             
     max-width: 1200px;       
     margin: 0 auto;          
-    padding-top:130px;           
+    padding-top:140px;           
     display: flex;           
     flex-direction: column;
     align-items: center;    
@@ -146,15 +146,88 @@
     transition: 0.5s ease-in-out;
 }
 
+.music-section
+{
 
+    background-image: url('../assets/music-bg.png');
+    background-size: 100% auto;   
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-top: 160px;
 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 500px; 
+}
+.container2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;     
+    gap: 0px;
+}
+
+#music-image1 {
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    top: -30px; 
+}
+
+#music-image2 {
+    width: 450px;
+    height: 650px;
+    position: relative;
+    z-index: 2; 
+    top: 15px; 
+}
+
+#music-image3 {
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    top: -30px;
+}
 @media (max-width: 600px) {
+    /* Navbar adjustments */
     .menu-list {
         flex-direction: column;
     }
+
     .navbar {
         padding-left: 4%;
-        padding-right: 4%;
+        padding-right: 0%;
     }
-    .navbar-image1-size { width: 100px; }
+
+    .navbar-image1-size {
+        width: 100px;
+    }
+
+    /* Music section adjustments */
+    .music-section {
+        height: auto;      /* auto height for small screens */
+        padding: 20px 0;   /* vertical padding */
+    }
+
+    .container2 {
+        flex-direction: column; /* stack images vertically */
+        gap: 15px;              /* spacing between images */
+    }
+    #music-image2
+    {
+        width: 100%;   /* responsive width */
+        max-width: 400px;
+        top: 0px;
+    }
+
+    #music-image1,
+    #music-image3 {
+        width: 80%;   /* responsive width */
+        max-width: 300px;
+        top: 0px;     /* remove floating effect on small screens */
+    }
 }
