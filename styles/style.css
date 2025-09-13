@@ -145,7 +145,13 @@
     background-color: #295CA1;
     transition: 0.5s ease-in-out;
 }
-
+.hero-section-two button:hover{
+    background-color: #295CA1;
+    transition: 0.5s ease-in-out;
+}
+.clr2{
+    color: #66778e;
+}
 .music-section
 {
 
@@ -192,6 +198,54 @@
     z-index: 1;
     top: -30px;
 }
+
+.headphone-section {
+    margin-top: 100px;
+    position: relative;         
+    display: flex;
+    align-items: center;        
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.headphone-section #image1 {
+    width: 650px;
+    position: relative;         
+    top: 40px; 
+    left: -135px;                
+    z-index: 2;                 
+}
+
+.container3.hero-section-two {
+    position: relative; 
+    z-index: 2; 
+    left: -135px; 
+    width: 1250px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container3.hero-section-two h1,
+.container3.hero-section-two p
+{
+    margin: 0px;
+}
+
+.container3.hero-section-two h1{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.container3.hero-section-two p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
 @media (max-width: 600px) {
     /* Navbar adjustments */
     .menu-list {
@@ -229,5 +283,48 @@
         width: 80%;   /* responsive width */
         max-width: 300px;
         top: 0px;     /* remove floating effect on small screens */
+    }
+
+    .headphone-section {
+        flex-direction: column;  /* Stack image and text vertically */
+        margin-top: 50px;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .headphone-section #image1 {
+        width: 90%;       
+        top: 0;
+        left: 0;
+        position: relative;
+        left: -20px;
+        z-index: 1;
+    }
+
+    .container3.hero-section-two {
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 2;
+    }
+
+    .container3.hero-section-two h1 {
+        font-size: 28px;  /* Smaller font size */
+        margin-bottom: 10px;
+    }
+
+    .container3.hero-section-two p {
+        font-size: 14px;  /* Smaller font size */
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .container3.hero-section-two button {
+        padding: 10px 20px;  /* Adjust button size */
+        font-size: 14px;
     }
 }
