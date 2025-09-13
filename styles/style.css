@@ -1,0 +1,160 @@
+.all-body
+{
+    background-color: #0A2345;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+.pointer
+{
+    cursor: pointer;
+}
+.clr1
+{
+    color: #295CA1;
+}
+.white
+{
+    color: #ffff;
+}
+
+.container h1, 
+.container p 
+{
+  margin: 0;        
+}
+
+.hero-section-one h1
+{
+    margin-bottom: 15px;
+}
+.hero-section-one p
+{
+    margin-bottom: 30px;
+    font-size: 19px;
+}
+.hero-section-one button
+{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.container 
+{
+    width: 90%;             
+    max-width: 1200px;       
+    margin: 0 auto;          
+    padding-top:130px;           
+    display: flex;           
+    flex-direction: column;
+    align-items: center;    
+    gap: 5px;   
+       
+}
+  
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.navbar-image1-size
+{
+    width: 75%;
+    height: auto;
+    cursor: pointer;
+}
+.navbar-image2-size
+{
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+.menu-label {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform-origin: top center;
+    transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.35s ease;
+    
+}
+
+/* menu content */
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-list li {
+    padding: 6px 10px;
+}
+
+.menu-list a {
+    font-size: 20px;
+    color: #295CA1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#menu-toggle:checked ~ .menu {
+    max-height: 260px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blend-btn{
+    background-color: #0A2345;
+    width: 180px;
+    height: auto;
+    border: 1px solid #295CA1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 100px;
+    
+}
+
+.hero-section-one h1
+{
+    font-size: 50px;
+    font-weight:lighter;
+}
+
+.hero-section-one button:hover{
+    background-color: #295CA1;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+@media (max-width: 600px) {
+    .menu-list {
+        flex-direction: column;
+    }
+    .navbar {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .navbar-image1-size { width: 100px; }
+}
